@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>GWC @ CMHS</title>
+  <link rel="stylesheet" href="{{ url_for('static', filename='css/bootstrap.min.css') }}">
+  <link rel="stylesheet" href="{{ url_for('static', filename='css/type.css') }}">
+  <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+  <script src="{{ url_for('static', filename='js/bootstrap.min.js') }}"></script>
+  <script src="{{ url_for('static', filename='js/typing.js') }}"></script>
+  <script type="text/javascript">
+    $(document).ready(function() {
+      setTimeout(function() {
+        $("#proceed").show();
+      }, 4000);
+    });
+  </script>
+</head>
+
+<body>
+
+  <!-- start navigation bar -->
+  <header>
+    <nav class="navbar navbar-expand-lg navbar-dark" style="background-color: #74c8b0">
+      <div class="container">
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo03" aria-controls="navbarTogglerDemo03" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <a class="navbar-brand" href="https://girlswhocode.com">
+          <img src="{{ url_for('static', filename = 'img/gwc_logo.jpg') }}" width="100" height="50">
+        </a>
+
+        <div class="collapse navbar-collapse" id="navbarTogglerDemo03">
+          <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+            <li class="nav-item active">
+              <a class="nav-link" href="{{ url_for('home') }}">Home <span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="{{ url_for('.home', _anchor='about') }}">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="{{ url_for('projects') }}">Projects</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="{{ url_for('members') }}">Members</a>
+            </li>
+          </ul>
+          <span class="navbar-text">
+            Girls Who Code @ Cox Mill HS
+          </span>
+        </div>
+      </div>
+    </nav>
+  </header>
+  <!-- end navigation bar -->
+
+  <!-- add page-specific content -->
+  {% block content %}
+  {% endblock %}
+  <!-- end page specific content -->
+
+</body>
+
+<div class="container-fluid" style="background-color: #74c8b0;">
+  <footer class="footer pt-4 pb-2 border-top">
+    <p class="text-center" style="color: rgba(255,255,255,.5)">This website was coded by the GWC club at Cox Mill High School. <br> &#169; 2019</p>
+  </footer>
+</div>
+</html>

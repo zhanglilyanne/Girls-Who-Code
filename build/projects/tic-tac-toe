@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>GWC @ CMHS</title>
+  <link rel="stylesheet" href="/static/css/bootstrap.min.css">
+  <link rel="stylesheet" href="/static/css/type.css">
+  <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+  <script src="/static/js/bootstrap.min.js"></script>
+  <script src="/static/js/typing.js"></script>
+  <script type="text/javascript">
+    $(document).ready(function() {
+      setTimeout(function() {
+        $("#proceed").show();
+      }, 4000);
+    });
+  </script>
+</head>
+
+<body>
+
+  <!-- start navigation bar -->
+  <header>
+    <nav class="navbar navbar-expand-lg navbar-dark" style="background-color: #74c8b0">
+      <div class="container">
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo03" aria-controls="navbarTogglerDemo03" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <a class="navbar-brand" href="https://girlswhocode.com">
+          <img src="/static/img/gwc_logo.jpg" width="100" height="50">
+        </a>
+
+        <div class="collapse navbar-collapse" id="navbarTogglerDemo03">
+          <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+            <li class="nav-item active">
+              <a class="nav-link" href="/">Home <span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="/#about">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="/projects/">Projects</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="/members/">Members</a>
+            </li>
+          </ul>
+          <span class="navbar-text">
+            Girls Who Code @ Cox Mill HS
+          </span>
+        </div>
+      </div>
+    </nav>
+  </header>
+  <!-- end navigation bar -->
+
+  <!-- add page-specific content -->
+  
+<div class="container">
+ <h1 class="display-4 text-center mt-3">PROJECT</h1>
+ </div>
+
+  <!-- end page specific content -->
+
+</body>
+
+<div class="container-fluid" style="background-color: #74c8b0;">
+  <footer class="footer pt-4 pb-2 border-top">
+    <p class="text-center" style="color: rgba(255,255,255,.5)">This website was coded by the GWC club at Cox Mill High School. <br> &#169; 2019</p>
+  </footer>
+</div>
+</html>
