@@ -1,6 +1,40 @@
 {% extends "layout.html" %}
 {% block content %}
 <div class="container">
- <h1 class="display-4 text-center mt-3">PROJECT</h1>
+ <h1 class="display-4 text-center mt-3">An Artist’s Journey</h1>
+ <!-- add image here -->
+ <br>
+ <!-- <img src="{{ url_for('static', filename = 'img/journey.jpg') }}" class="figure-img img-fluid rounded img-fluid align-center" style="height: 25rem"> -->
+ <br>
+
+ <br>
+<ul class="list-group list-group-flush">
+  <li class="list-group-item"><strong>Group Members: </strong>Serena Brantley, Lauren Houston, Sarita Pennoh</li>
+  <li class="list-group-item"><strong>Description: </strong>This program is a ‘choose-your-own-adventure’ journey through the eyes of an artist.</li>
+  <li class="list-group-item"><strong>Purpose: </strong>Our goal with this program is to inform the user of the many careers available in the creative field.</li>
+  <li class="list-group-item"><strong>Audience: </strong>Our target audience is anyone interested and passionate about art. It allows them to see the opportunities they could take and gives them plenty of information based on their choices.</li>
+  <li class="list-group-item"><strong>Inspiration: </strong>We inspired ourselves to create this program. We are all interested in artwork and thought it would be great to create a program that is both entertaining and a helpful way to pinpoint the user’s interests. Once their interested are discovered, the program displays information about the careers that their path lead to.</li>
+  <li class="list-group-item"><strong>Tech Stack: </strong>We made our program using Python and used Azure and Jupyter as our main interface.
+</li>
+  <li class="list-group-item"><strong>Challenges: </strong>We had some difficulty when trying to figure out how to add visuals to our program. Eventually we found a website that converts images into ASCII text artwork, which we simply put into print statements to display the visuals. Another difficulty we faced was working with Jupyter’s unstable interface. Normally, we would work in IDLE, another python programming interface, but it was not installed on the computers we used. This caused us to deal with Azure’s unstable coding environment, causing us to lose portions of work at times.</li>
+  <div class="list-group-item"><strong>Future Plans: </strong>We could improve our program by fully bullet-proofing it and avoiding any errors that could be caused by the user typing in the wrong thing into the input statements, throughout the program. Some future changes we could add to our program is…
+  <li class="ml-5">Add more characters to the program.</li>
+  <li class="ml-5">Add more branches and choices in the adventure.</li>
+  <li class="ml-5">Add more endings with more information about new careers in the art field.</li>
+</div>
+</ul>
+<br>
+
+<h3 class="display-4 text-center mt-3">Code</h3>
+<p class="text-center">Continue scrolling to the bottom to play the game! </p>
+  <br>
+<iframe src=https://tech.io/snippet-widget/eor2DEc width=100% frameborder=0 scrolling=no allowtransparency=true style=visibility:hidden>
+</iframe>
+<script>if(void 0===window.techioScriptInjected){window.techioScriptInjected=!0;var script=document.createElement("script");script.src="https://files.codingame.com/codingame/iframe-v-1-4.js",(document.head||document.body).appendChild(script)}</script>
+
+
  </div>
+ <br>
+ <br>
+ <br>
  {% endblock %}
