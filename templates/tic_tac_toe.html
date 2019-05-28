@@ -1,26 +1,80 @@
 {% extends "layout.html" %}
 {% block content %}
 <div class="container">
- <h1 class="display-4 text-center mt-3">Tic-Tac-Toe</h1>
- <!-- add image here -->
+  <h1 class="display-4 text-center mt-3">Beginner Games</h1>
+  <p class="text-center">Choose a game you'd like to play</p>
+  <!-- add image here -->
 
- <br>
-<ul class="list-group list-group-flush">
-  <li class="list-group-item"><strong>Group Member(s): </strong>Pooja Yadav</li>
-  <li class="list-group-item"><strong>Description: </strong>My game is all about a player and a computer who are playing against each other. A player selects one cell position and the computer selects another position at a random available cell, eventually this keeps going on iterations until one player wins. </li>
-  <li class="list-group-item"><strong>Purpose: </strong>I created this game as a challenge to see if I could meet my goal of coding a game in python. </li>
-  <li class="list-group-item"><strong>Audience: </strong>I’m sure many people with varying ages have played tic tac toe before and I don’t think this game targets a specific group of people.  </li>
-  <li class="list-group-item"><strong>Inspiration: </strong>I chose this game because this is a very common game that many people enjoy, kids, adults, senior citizens. By creating this game I would be targeting many age groups.</li>
-  <li class="list-group-item"><strong>Tech Stack: </strong>I coded this game in python 2</li>
-  <li class="list-group-item"><strong>Challenges: </strong>I had a few challenges along the way, I was struggling with getting the correct outcome in my game, but with the help of my dad and lily I was able to complete my program correctly.</li>
-  <li class="list-group-item"><strong>Future Plans: </strong>Due to lack of time I was unable to import graphic into my code, but I will definitely try to do that in the future. </li>
-</ul>
+  <div class="container" id=myGroup>
+    <p class="text-center">
+      <a class="btn btn-primary" data-toggle="collapse" href="#collapseExample" role="button" aria-expanded="false" aria-controls="collapseExample">
+        Tic-Tac-Toe
+      </a>
+      <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#collapseExample2" aria-expanded="false" aria-controls="collapseExample2">
+        Guess the Number
+      </button>
+    </p>
+<br>
+    <div class="collapse show" id="collapseExample" data-parent="#myGroup">
+        <div class="col">
+          <h1 class="display-4 text-center mt-3">Tic-Tac-Toe</h1>
+          <ul class="list-group list-group-flush">
+            <li class="list-group-item"><strong>Group Member(s): </strong>Pooja Yadav</li>
+            <li class="list-group-item"><strong>Description: </strong>My game is all about a player and a computer who are playing against each other. A player selects one cell position and the computer selects another position at a random available cell, eventually this keeps going on iterations until one player wins. </li>
+            <li class="list-group-item"><strong>Purpose: </strong>I created this game as a challenge to see if I could meet my goal of coding a game in python. </li>
+            <li class="list-group-item"><strong>Audience: </strong>I’m sure many people with varying ages have played tic tac toe before and I don’t think this game targets a specific group of people.  </li>
+            <li class="list-group-item"><strong>Inspiration: </strong>I chose this game because this is a very common game that many people enjoy, kids, adults, senior citizens. By creating this game I would be targeting many age groups.</li>
+            <li class="list-group-item"><strong>Tech Stack: </strong>I coded this game in python 2</li>
+            <li class="list-group-item"><strong>Challenges: </strong>I had a few challenges along the way, I was struggling with getting the correct outcome in my game, but with the help of my dad and lily I was able to complete my program correctly.</li>
+            <li class="list-group-item"><strong>Future Plans: </strong>Due to lack of time I was unable to import graphic into my code, but I will definitely try to do that in the future. </li>
+          </ul>
 
-<!-- add code to the bottom -->
-<h3 class="display-4 text-center mt-3">Code</h3>
-<p class="text-center">Continue scrolling to the bottom to play the game! </p>
-  <br>
-<iframe src="https://trinket.io/embed/python/bffdb31c1a?runOption=run&start=result" width="100%" height="600" frameborder="0" marginwidth="0" marginheight="0" allowfullscreen></iframe>
- </div>
- <br><br><br>
- {% endblock %}
+          <!-- add code to the bottom -->
+          <h3 class="display-4 text-center mt-3">Code</h3>
+          <p class="text-center">Continue scrolling to the bottom to play the game! </p>
+          <br>
+          <iframe src="https://trinket.io/embed/python/bffdb31c1a?runOption=run&start=result" width="100%" height="600" frameborder="0" marginwidth="0" marginheight="0" allowfullscreen></iframe>
+        </div>
+    </div>
+  </div>
+  <div class="collapse" id="collapseExample2" data-parent="#myGroup">
+      <div class="col">
+        <h1 class="display-4 text-center mt-3">Guess the Number Game</h1>
+        <ul class="list-group list-group-flush">
+          <li class="list-group-item"><strong>Group Member(s): </strong>Sreejani Jonnalagadda</li>
+          <li class="list-group-item"><strong>Description: </strong>My project is a game between a player and the computer. The computer comes up with a random number and the player has to guess it. After each guess, the computer answers either “Higher” or “Lower” until the player has guessed the correct number. </li>
+          <li class="list-group-item"><strong>Purpose: </strong>Since I am new to Python, I decided to do a simple game as my first coding project/game. Throughout this experience, I have used many different coding techniques and skills that I have learned through Girls Who Code and edX. </li>
+          <li class="list-group-item"><strong>Audience: </strong>This project targets any age group and is not specific to just one. </li>
+          <li class="list-group-item"><strong>Inspiration: </strong>Answer</li>
+          <li class="list-group-item"><strong>Tech Stack: </strong>I used Python 3 to code my project. I also used Azure Notebooks as my coding platform.</li>
+          <li class="list-group-item"><strong>Challenges: </strong>I struggled to get the correct outcome of the code without syntax errors, but after a lot of trial and error, I was finally able to complete the game without any mistakes or errors. If it wasn’t for Lily’s patience when helping me code, I would not have completed the program.</li>
+          <li class="list-group-item"><strong>Future Plans: </strong>I would probably turn this into an app or import graphics into the program to make it colorful.</li>
+        </ul>
+
+        <!-- add code to the bottom -->
+        <h3 class="display-4 text-center mt-3">Code</h3>
+        <p class="text-center">Continue scrolling to the bottom to play the game! </p>
+        <br>
+        <iframe src=https://tech.io/snippet-widget/zhewEND width=100% frameborder=0 scrolling=no allowtransparency=true style=visibility:hidden>
+        </iframe>
+        <script>if(void 0===window.techioScriptInjected){window.techioScriptInjected=!0;var script=document.createElement("script");script.src="https://files.codingame.com/codingame/iframe-v-1-4.js",(document.head||document.body).appendChild(script)}</script>
+      </div>
+  </div>
+</div>
+
+<!-- <div class="container" id="large-container">
+<div class="text-center">
+
+<br>
+<a class="btn btn-primary" data-toggle="collapse" href="#multiCollapseExample1" role="button" aria-expanded="false" aria-controls="multiCollapseExample1" data-parent="#large-container">Tic-Tac-Toe</a>
+<button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#multiCollapseExample2" aria-expanded="false" aria-controls="multiCollapseExample2" data-parent="#large-container">Guess the Number</button>
+</div>
+</div> -->
+<br>
+
+
+
+
+
+<br><br><br>
+{% endblock %}

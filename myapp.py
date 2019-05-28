@@ -26,7 +26,7 @@ def word_game():
 def coding_languages():
     return render_template('coding_languages.html')
 
-@app.route('/projects/tic-tac-toe/')
+@app.route('/projects/beginner-games/')
 def tic_tac_toe():
     return render_template('tic_tac_toe.html')
 # end projects
