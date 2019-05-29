@@ -35,5 +35,9 @@ def tic_tac_toe():
 def members():
     return render_template('members.html')
 
+@app.route('/media/')
+def media():
+    return render_template('media.html')
+
 if __name__ == '__main__':
     app.run(debug=True)

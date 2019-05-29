@@ -1,0 +1,79 @@
+{% extends "layout.html" %}
+{% block content %}
+
+<h1 class="display-4 text-center mt-3">Media</h1>
+<br>
+
+<div class="container">
+  <div class="row">
+    <div class="col-md-6">
+      <figure class="figure">
+        <img src="{{ url_for('static', filename = 'img/first_meeting.jpg') }}" class="figure-img img-fluid rounded img-fluid" style="height: 27rem">
+        <figcaption class="figure-caption text-center">First GWC meeting! A round table discussion of why we're interested in tech.</figcaption>
+      </figure>
+    </div>
+
+    <div class="col-md-6">
+      <figure class="figure">
+        <img src="{{ url_for('static', filename = 'img/translator.jpg') }}" class="figure-img img-fluid rounded img-fluid" style="height: 27rem">
+        <figcaption class="figure-caption text-center">First GWC meeting - discussing why we're interested in tech!</figcaption>
+      </figure>
+    </div>
+  </div>
+</div>
+
+<br>
+
+<div class="container">
+  <div class="row">
+    <div class="col-md-6">
+      <figure class="figure">
+        <img src="{{ url_for('static', filename = 'img/tic_tac_toe.jpg') }}" class="figure-img img-fluid rounded img-fluid" style="height: 27rem">
+        <figcaption class="figure-caption text-center">Working on tutorials - learning about Python, Javascript, and Scratch!</figcaption>
+      </figure>
+    </div>
+
+    <div class="col-md-6">
+      <figure class="figure">
+        <img src="{{ url_for('static', filename = 'img/journey.jpg') }}" class="figure-img img-fluid rounded img-fluid" style="height: 27rem">
+        <figcaption class="figure-caption text-center">Sarita showcasing our GWC club at an open house!</figcaption>
+      </figure>
+    </div>
+  </div>
+</div>
+<br>
+
+<div class="container">
+  <div class="row">
+    <div class="col-md-6">
+      <figure class="figure">
+        <img src="{{ url_for('static', filename = 'img/elem_school_presentations.jpg') }}" class="figure-img img-fluid rounded img-fluid" style="height: 27rem">
+        <figcaption class="figure-caption text-center">Sarita, Lauren, and Serena demoing their project to the elementary school GWC club!</figcaption>
+      </figure>
+    </div>
+
+    <div class="col-md-6">
+      <figure class="figure">
+        <img src="{{ url_for('static', filename = 'img/pbj2.jpg') }}" class="figure-img img-fluid rounded img-fluid" style="height: 27rem">
+        <figcaption class="figure-caption text-center">Kirsten and Likhita making a PBJ sandwich with instructions from the elementary school GWC club!</figcaption>
+      </figure>
+    </div>
+  </div>
+</div>
+<br>
+
+<div class="container">
+  <div class="row text-center">
+    <div class="col-md-12">
+      <figure class="figure">
+        <img src="{{ url_for('static', filename = 'img/pbj.jpg') }}" class="figure-img img-fluid rounded img-fluid" style="height: 27rem">
+        <figcaption class="figure-caption text-center">Lauren and Skylar making a PBJ with instructions from the elementary school!</figcaption>
+      </figure>
+    </div>
+  </div>
+</div>
+
+
+
+
+{% endblock %}
