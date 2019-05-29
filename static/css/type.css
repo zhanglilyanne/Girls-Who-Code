@@ -1,13 +1,14 @@
 @import url(https://fonts.googleapis.com/css?family=Karla);
 
 body {
+  height: 100%;
   font-family: "Karla", sans-serif;
 }
 
 #welcome_div{
   background-image: url("../img/first_meeting_bw_zoom_blur.jpg");
   background-size: cover;
-  height: 50rem;
+  height: 60rem;
   width: 100%
 }
 
